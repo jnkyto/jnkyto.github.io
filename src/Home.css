@@ -1,0 +1,32 @@
+a   {
+    text-decoration: none;
+}
+
+.Home-header  {
+    background: none;
+}
+
+.Home-header a   {
+    color: blanchedalmond;
+}
+
+.Home-header h1  {
+    text-align: center;
+}
+
+.Bread  {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.Bread p    {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+#meitsi  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vh;
+}
