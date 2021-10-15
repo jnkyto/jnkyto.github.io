@@ -1,13 +1,35 @@
+
 .footer {
+    padding-top: .5em;
+    padding-bottom: .5em;
     width: 100%;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
-    right: 0;
     background-color: rgba(0,0,0,0.8);
+        text-align: center;
 }
 
 .footer p   {
     color: blanchedalmond;
+}
+
+ul   {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5em;
+}
+
+.footer_links li    {
+    display: inline;
     text-align: center;
+}
+
+.footer_links a  {
+    float: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    color:slategray;
 }
