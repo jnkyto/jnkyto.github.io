@@ -1,24 +1,23 @@
 
+.footerbody  {
+    margin-top: auto;
+    flex: 0;
+}
+
 .footer {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.8);
-        text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #000000cc;
+    text-align: center;
 }
 
 .footer p   {
-    color: blanchedalmond;
+    color: whitesmoke;
 }
 
 ul   {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    padding-bottom: 0.5em;
 }
 
 .footer_links li    {
@@ -27,7 +26,6 @@ ul   {
 }
 
 .footer_links a  {
-    float: none;
     text-decoration: none;
     display: inline-block;
     width: 100px;

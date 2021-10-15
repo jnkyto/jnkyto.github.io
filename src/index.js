@@ -6,6 +6,7 @@ import Finnish from './locale/fi_fi.json';
 import Japanese from './locale/ja_jp.json';
 import './index.css';
 import Home from './Home';
+import Header from './Header';
 import Footer from './Footer';
 
 const Messages = {
@@ -18,7 +19,7 @@ const Lang = navigator.language.split(/[-_]/)[0];
 
 ReactDOM.render(
   <IntlProvider locale={Lang} messages={Messages[Lang]}>
-    <><Home /><Footer /></>
+    <><Header /><Home /><Footer /></>
   </IntlProvider>, 
 document.getElementById('root')
 );

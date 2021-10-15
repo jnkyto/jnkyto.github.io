@@ -1,33 +1,18 @@
-a   {
-    text-decoration: none;
-}
-
-.Home-header  {
-    background: none;
-}
-
-.Home-header a   {
-    color: blanchedalmond;
-}
-
-.Home-header h1  {
-    text-align: center;
-}
-
-.Bread  {
-    margin-top: 25vh;
+.bread  {
+    padding-top: 20vh;
     width: 100%;
-    height: 55vh;
+    margin: 0 auto;
+    max-width: 80ch;
+    flex: 1;
 }
 
-.Bread p    {
+.bread p    {
     text-align: center;
-    color: blanchedalmond;
+    color: whitesmoke;
 }
 
 #meitsi  {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 25vh;
 }
