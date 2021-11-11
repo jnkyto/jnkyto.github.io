@@ -1,25 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {IntlProvider} from 'react-intl';
-import English from './locale/en_us.json';
-import Finnish from './locale/fi_fi.json';
-import Japanese from './locale/ja_jp.json';
+import { IntlProviderWrapper } from './IntlContext';
 import './index.css';
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
 
-const Messages = {
-  'en': English,
-  'fi': Finnish,
-  'ja': Japanese
-}
-
-const Lang = navigator.language.split(/[-_]/)[0];
-
 ReactDOM.render(
-  <IntlProvider locale={Lang} messages={Messages[Lang]}>
+  <IntlProviderWrapper>
     <><Header /><Home /><Footer /></>
-  </IntlProvider>, 
+  </IntlProviderWrapper>,
 document.getElementById('root')
 );

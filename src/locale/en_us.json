@@ -2,5 +2,6 @@
     "test.text": "Test text",
     "work.in.progress": "Work in progress.",
     "author.name": "Joona Kytöniemi",
-    "contact": "Contact"
+    "contact": "Contact",
+    "language.change": "(click flag to change language)"
 }

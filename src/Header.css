@@ -1,12 +1,12 @@
-.header-header  {
+.header  {
     background: none;
 }
 
-.header-header a   {
+.header a   {
     color: whitesmoke;
     text-decoration: none;
 }
 
-.header-header h1  {
+.header h1  {
     text-align: center;
 }
