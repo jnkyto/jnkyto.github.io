@@ -5,6 +5,10 @@
   width: 1em;
 }
 
+#lang-button:hover  {
+  cursor: pointer;
+}
+
 .lang p {
   margin: auto;
   font-weight: normal;
