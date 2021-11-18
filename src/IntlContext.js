@@ -4,8 +4,6 @@ import English from './locale/en_us.json';
 import Finnish from './locale/fi_fi.json';
 import Japanese from './locale/ja_jp.json';
 
-// const intlCache = createIntlCache();
-
 const Context = React.createContext();
 
 class IntlProviderWrapper extends React.Component {

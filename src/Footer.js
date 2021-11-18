@@ -9,7 +9,7 @@ const Footer = () => (
                 <br></br>
                 <FormattedMessage id='contact' defaultMessage='Contact'></FormattedMessage>: kjoona<span>@</span>outlook.com
             </p>
-            <ul className="footer_links">
+            <ul className="footer-links">
                 <li>
                     <a href="https://github.com/jnkyto">GitHub</a>
                 </li>

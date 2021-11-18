@@ -1,12 +1,16 @@
 #lang-button  {
-  padding-left: 0.55em;
-  padding-right: 0.55em;
   margin: 0;
   width: 1em;
 }
 
 #lang-button:hover  {
   cursor: pointer;
+}
+
+.lang-container {
+  display: inline;
+  padding-left: 0.55em;
+  padding-right: 0.55em;
 }
 
 .lang p {

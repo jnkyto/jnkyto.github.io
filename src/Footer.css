@@ -20,12 +20,12 @@ ul   {
     padding: 0;
 }
 
-.footer_links li    {
+.footer-links li    {
     display: inline;
     text-align: center;
 }
 
-.footer_links a  {
+.footer-links a  {
     text-decoration: none;
     display: inline-block;
     width: 100px;
