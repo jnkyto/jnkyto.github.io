@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import './Footer.css';
 
 const Footer = () => (
-    <div className="footerbody">
+    <div className="footer-container">
         <footer className="footer">
             <p>©{new Date().getFullYear()} <FormattedMessage id='author.name' defaultMessage='Joona Kytöniemi'></FormattedMessage>
                 <br></br>

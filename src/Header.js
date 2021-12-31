@@ -5,7 +5,8 @@ import LanguageSwitch from './LanguageSwitch';
 const Header = () => (
     <div className="header-container">
         <header className="header">
-            <h1 id="home"><a href="https://kytonie.me" rel="noopener noreferrer">kytonie.me</a><LanguageSwitch /></h1>
+            <h1 id="go-home" role="link"><a href="https://kytonie.me" alt="Click to go back to index page" rel="noopener noreferrer">kytonie.me</a></h1>
+            <LanguageSwitch />
         </header>
     </div>
 );

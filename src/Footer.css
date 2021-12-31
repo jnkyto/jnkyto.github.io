@@ -1,5 +1,5 @@
 
-.footerbody  {
+.footer-container  {
     margin-top: auto;
     flex: 0;
 }
@@ -7,7 +7,7 @@
 .footer {
     padding-top: 1vh;
     padding-bottom: 3vh;
-    background-color: #000000cc;
+    background-color: #000000CC;
     text-align: center;
 }
 

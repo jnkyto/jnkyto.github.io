@@ -7,7 +7,7 @@ import fiImg from './img/langbtn/fi.png';
 import jpImg from './img/langbtn/jp.png';
 
 const LanguageSwitch = () => {
-  const { switchToEnglish, switchToFinnish, switchToJapanese } = React.useContext(IntlContext);
+  const {switchToEnglish, switchToFinnish, switchToJapanese} = React.useContext(IntlContext);
   return (
     <div className="lang">
       <div className="lang-container">
