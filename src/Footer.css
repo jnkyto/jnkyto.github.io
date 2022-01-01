@@ -5,8 +5,9 @@
 }
 
 .footer {
-    padding-top: 1vh;
+    padding-top: 0.5vh;
     padding-bottom: 3vh;
+    font-size: 1.0em;
     background-color: #000000CC;
     text-align: center;
 }
@@ -30,4 +31,8 @@ ul   {
     display: inline-block;
     width: 100px;
     color: slategray;
+}
+
+.footer-links a:hover {
+    color: white;
 }

@@ -1,5 +1,14 @@
-.header  {
+.header-container {
+    margin: 0;
     background: none;
+    display: flex;
+}
+
+.header  {
+    margin: auto;
+    padding-top: 1em;
+    width: 80vw;
+    display: inline-table;
 }
 
 .header a   {
@@ -7,8 +16,34 @@
     text-decoration: none;
 }
 
-.header h1  {
+.header a:hover  {
+    color: gray;
+}
+
+#go-home  {
+    padding-left: 10vw;
+    display: table-cell;
+    width: 30vw;
     text-align: center;
-    font-size: 2.2em;
-    margin: 0.4em;
+    font-size: 2.3em;
+}
+
+@media screen and (max-width: 730px)	 {
+    .header-container {
+      display: inline-flex;
+    }
+
+    .header {
+      width: 100vw;
+    }
+
+    #go-home  {
+      padding: 1vh;
+    }
+
+    .lang {   /* .lang IS DEFINED IN LanguageSwitch.css*/
+      display: table-row;
+      width: 100%;
+      padding-right: 0%;
+    }
 }

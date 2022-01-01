@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = () => (
     <div className="footer-container">
         <footer className="footer">
-            <p>©{new Date().getFullYear()} <FormattedMessage id='author.name' defaultMessage='Joona Kytöniemi'></FormattedMessage>
+            <p>©{new Date().getFullYear()} <FormattedMessage id='author.name' defaultMessage=''></FormattedMessage>Joona Kytöniemi
                 <br></br>
                 <FormattedMessage id='contact' defaultMessage='Contact'></FormattedMessage>: kjoona<span>@</span>outlook.com
             </p>

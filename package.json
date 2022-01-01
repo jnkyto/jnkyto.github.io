@@ -1,19 +1,19 @@
 {
   "name": "kytoniemi",
   "homepage": "http://jnkyto.github.io/",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.3.0",
-    "babel-plugin-formatjs": "^10.3.9",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-plugin-formatjs": "^10.3.12",
     "dotenv": "^10.0.0",
-    "expo-localization": "^10.2.0",
+    "expo-localization": "^12.0.0",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-intl": "^5.20.12",
+    "react-intl": "^5.24.0",
     "react-redux": "^7.2.6",
     "react-scripts": "^5.0.0"
   },
@@ -44,10 +44,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.8",
-    "@formatjs/cli": "^4.3.1",
-    "eslint": "^8.5.0",
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@formatjs/cli": "^4.5.0",
+    "eslint": "^8.6.0",
     "gh-pages": "^3.2.3"
   }
 }
