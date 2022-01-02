@@ -1,7 +1,7 @@
 {
   "name": "kytoniemi",
-  "homepage": "http://jnkyto.github.io/",
-  "version": "3.1.1",
+  "homepage": "https://jnkyto.github.io/",
+  "version": "3.1.3",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",

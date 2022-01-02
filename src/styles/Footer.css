@@ -1,4 +1,3 @@
-
 .footer-container  {
     margin-top: auto;
     flex: 0;
@@ -7,32 +6,31 @@
 .footer {
     padding-top: 0.5vh;
     padding-bottom: 3vh;
-    font-size: 1.0em;
     background-color: #000000CC;
     text-align: center;
 }
 
 .footer p   {
     color: whitesmoke;
+    font-size: 1em;
 }
 
-ul   {
+.footer-links   {
     list-style-type: none;
     padding: 0;
 }
 
 .footer-links li    {
-    display: inline;
-    text-align: center;
+    display: inline-flex;
 }
 
 .footer-links a  {
     text-decoration: none;
     display: inline-block;
-    width: 100px;
+    min-width: 100px;
     color: slategray;
 }
 
 .footer-links a:hover {
-    color: white;
+    color: whitesmoke;
 }

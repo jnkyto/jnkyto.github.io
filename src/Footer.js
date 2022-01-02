@@ -1,13 +1,13 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import './Footer.css';
+import './styles/Footer.css';
 
 const Footer = () => (
     <div className="footer-container">
         <footer className="footer">
-            <p>©{new Date().getFullYear()} <FormattedMessage id='author.name' defaultMessage=''></FormattedMessage>Joona Kytöniemi
-                <br></br>
-                <FormattedMessage id='contact' defaultMessage='Contact'></FormattedMessage>: kjoona<span>@</span>outlook.com
+            <p>©{new Date().getFullYear()} <FormattedMessage id='author.name' defaultMessage=''/>Joona Kytöniemi
+                <br/>
+                <FormattedMessage id='contact' defaultMessage='Contact'/>: kjoona<span>@</span>outlook.com
             </p>
             <ul className="footer-links">
                 <li>

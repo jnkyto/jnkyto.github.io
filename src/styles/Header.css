@@ -1,13 +1,12 @@
 .header-container {
     margin: 0;
-    background: none;
+    padding-top: 1em;
     display: flex;
 }
 
 .header  {
     margin: auto;
-    padding-top: 1em;
-    width: 80vw;
+    max-width: 80vw;
     display: inline-table;
 }
 
@@ -21,14 +20,13 @@
 }
 
 #go-home  {
-    padding-left: 10vw;
     display: table-cell;
     width: 30vw;
     text-align: center;
     font-size: 2.3em;
 }
 
-@media screen and (max-width: 730px)	 {
+@media screen and (max-width: 750px)	 {
     .header-container {
       display: inline-flex;
     }
@@ -44,6 +42,6 @@
     .lang {   /* .lang IS DEFINED IN LanguageSwitch.css*/
       display: table-row;
       width: 100%;
-      padding-right: 0%;
+      padding-right: 0;
     }
 }

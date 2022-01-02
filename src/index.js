@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { IntlProviderWrapper } from './IntlContext';
-import './index.css';
+import './styles/Index.css';
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
