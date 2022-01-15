@@ -1,21 +1,23 @@
 .bread  {
-    padding-top: 14vh;
-    padding-bottom: 10vh;
+    padding-top: 12vh;
     width: 100%;
-    margin: 0 auto;
-    max-width: 80ch;
+    margin: auto;
     flex: 1;
 }
 
 .bread p    {
     text-align: center;
-    color: whitesmoke;
-    font-size: 1.2em;
+    margin: 2em;
+    color: #EEE;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 8px slategray;
 }
 
 #meitsi  {
     border-radius: 6px;
+    border: 1px solid slategray;
     display: block;
     margin: auto;
-    width: 50%;
+    max-width: 40vh;
 }

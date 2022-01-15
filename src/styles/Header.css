@@ -1,7 +1,10 @@
 .header-container {
     margin: 0;
-    padding-top: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.7em;
     display: flex;
+    background-color: #00000099;
+    border-bottom: 0.2em solid slategray;
 }
 
 .header  {
@@ -21,12 +24,12 @@
 
 #go-home  {
     display: table-cell;
-    width: 30vw;
+    width: 40vw;
     text-align: center;
     font-size: 2.3em;
 }
 
-@media screen and (max-width: 750px)	 {
+@media screen and (max-width: 830px)	 {
     .header-container {
       display: inline-flex;
     }
