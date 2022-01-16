@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffcbe0cc.css",
+    "main.css": "/static/css/main.78470d6e.css",
     "main.js": "/static/js/main.afcff7b5.js",
     "static/media/meitsi.jpg": "/static/media/meitsi.97a020ba3b34f09cbdc8.jpg",
     "static/media/en.png": "/static/media/en.ec085ff630902653c0bb.png",
     "index.html": "/index.html",
-    "main.ffcbe0cc.css.map": "/static/css/main.ffcbe0cc.css.map",
+    "main.78470d6e.css.map": "/static/css/main.78470d6e.css.map",
     "main.afcff7b5.js.map": "/static/js/main.afcff7b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffcbe0cc.css",
+    "static/css/main.78470d6e.css",
     "static/js/main.afcff7b5.js"
   ]
 }
