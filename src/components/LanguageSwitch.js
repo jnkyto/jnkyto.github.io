@@ -1,10 +1,10 @@
-import './styles/LanguageSwitch.css';
+import '../styles/LanguageSwitch.css';
 import React from 'react';
-import { IntlContext } from "./IntlContext";
+import { IntlContext } from "../IntlContext";
 import {FormattedMessage} from 'react-intl';
-import enImg from './img/langbtn/en.png';
-import fiImg from './img/langbtn/fi.png';
-import jpImg from './img/langbtn/jp.png';
+import enImg from '../img/langbtn/en.png';
+import fiImg from '../img/langbtn/fi.png';
+import jpImg from '../img/langbtn/jp.png';
 
 const LanguageSwitch = () => {
   const {switchToEnglish, switchToFinnish, switchToJapanese} = React.useContext(IntlContext);

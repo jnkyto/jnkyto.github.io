@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import './styles/Footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => (
     <table className="footer-table">
@@ -28,7 +28,7 @@ const Footer = () => (
             </tr>
         </tbody>
     </table>
-    
+
 )
 
 export default Footer;
