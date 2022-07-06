@@ -3,5 +3,8 @@
     "work.in.progress": "Työn alla.",
     "author.name": " ",
     "contact": "Yhteydenotot",
-    "language.change": "(klikkaa lippua vaihtaaksesi kieltä)"
+    "language.change": "(klikkaa lippua vaihtaaksesi kieltä)",
+    "bread.projects": "Projektit:",
+    "project.marumaru": "omistaja, admin",
+    "project.digit": "webmaster, graafikko"
 }

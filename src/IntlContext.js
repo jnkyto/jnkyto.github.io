@@ -4,7 +4,7 @@ import English from './locale/en_us.json';
 import Finnish from './locale/fi_fi.json';
 import Japanese from './locale/ja_jp.json';
 
-const Context = React.createContext();
+const Context = React.createContext(undefined);
 
 class IntlProviderWrapper extends React.Component {
   constructor(...args)  {

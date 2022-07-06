@@ -1,23 +1,121 @@
-.bread  {
-    padding-top: 12vh;
+li {
+    list-style-type: none;
+}
+
+.home  {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 100%;
     margin: auto;
     flex: 1;
 }
 
-.bread p    {
+.main_root {
+    width: 100%;
+}
+
+.main_container {
+    text-align: center;
+    margin: auto;
+}
+
+.main_table {
+    padding: 0;
+    display: inline-flex;
+    margin: auto;
+}
+
+.main_table li {
+    margin: auto;
+}
+
+.main_table h1    {
     text-align: center;
     margin: 2em;
-    color: #EEE;
+    color: white;
     font-size: 1em;
     font-weight: bold;
     text-shadow: 0 0 8px slategray;
 }
 
+.east_side {
+    width: 256px;
+    color: white;
+}
+
+.code_block p {
+    margin: 0 0 0 0.75rem;
+    text-align: left;
+    font-family: Courier, serif;
+    font-size: 0.75rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: slategray;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.bread {
+    color: white;
+    text-align: center;
+}
+
+.bread h1 {
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 0 0 8px slategray;
+}
+
+.proj_table {
+    padding: 0;
+    display: inline-flex;
+}
+
+.proj_entry {
+    display: grid;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.proj_entry h3 {
+    margin: 0.25rem;
+    font-weight: bold;
+    text-shadow: 0 0 8px slategray;
+}
+
+.proj_entry p {
+    margin: 0.25rem;
+}
+
 #meitsi  {
     border-radius: 6px;
-    border: 1px solid slategray;
+    border: 3px solid slategray;
     display: block;
     margin: auto;
-    max-width: 40vh;
+    max-width: 256px;
+}
+
+#marumaru_logo {
+    max-width: 192px;
+    border-radius: 12px;
+    border: 3px solid slategray;
+}
+
+#digit_logo {
+    max-width: 192px;
+    border-radius: 12px;
+    border: 3px solid slategray;
+}
+
+@media screen and (max-width: 830px) {
+    .proj_table {
+        display: block;
+    }
+
+    .main_table {
+        display: block;
+    }
 }

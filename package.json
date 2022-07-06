@@ -1,16 +1,15 @@
 {
   "name": "kytoniemi",
   "homepage": "https://jnkyto.github.io/",
-  "version": "3.1.6",
+  "version": "3.2.0",
   "private": true,
   "dependencies": {
     "babel-plugin-formatjs": "^10.3.20",
     "dotenv": "^16.0.0",
     "jquery": "^3.6.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-intl": "^5.25.1",
-    "react-redux": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.0.5",
     "react-scripts": "^5.0.1"
   },
   "scripts": {

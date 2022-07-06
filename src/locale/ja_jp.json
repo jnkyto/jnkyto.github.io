@@ -2,6 +2,9 @@
     "test.text": "テスト文字列",
     "work.in.progress": "進行中の作業",
     "author.name": "キュトニエミ・ヨーナ / ",
-    "contact": "コンタクト",
-    "language.change": "(言語を変更するには旗をクリックして)"
+    "contact": "連絡を",
+    "language.change": "(言語を変更するには旗をクリックして)",
+    "bread.projects": "プロジェクト:",
+    "project.marumaru": "持ち主、 アドミン",
+    "project.digit": "ウェブマスター、 グラフィック"
 }

@@ -3,5 +3,8 @@
     "work.in.progress": "Work in progress.",
     "author.name": " ",
     "contact": "Contact",
-    "language.change": "(click flag to change language)"
+    "language.change": "(click flag to change language)",
+    "bread.projects": "Projects:",
+    "project.marumaru": "owner, admin",
+    "project.digit": "webmaster, graphics"
 }
