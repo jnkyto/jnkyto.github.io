@@ -1,7 +1,7 @@
 {
   "name": "kytoniemi",
   "homepage": "https://jnkyto.github.io/",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "private": true,
   "dependencies": {
     "babel-plugin-formatjs": "^10.3.20",
