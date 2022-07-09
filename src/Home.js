@@ -1,9 +1,11 @@
 import React from 'react';
 import './styles/Home.css';
 import meitsi from './img/meitsi.jpg';
-import marumaru from './img/marumaru.webp'
-import digit from './img/digit.webp'
+import ProjectTable from "./components/Project/ProjectTable";
 import {FormattedMessage} from 'react-intl';
+import ProjectEntry from "./components/Project/ProjectEntry";
+import digit from "./img/digit.webp";
+import marumaru from "./img/marumaru.webp";
 
 const Home = () => (
   <div className="home">
@@ -29,22 +31,20 @@ const Home = () => (
     <div className="divider"/>
     <div className="bread">
       <h1><FormattedMessage id='bread.projects' defaultMessage="Projects:"/></h1>
-      <ul className="proj_table">
-        <li className="proj_entry">
-          <a href="https://marumaru.fi/">
-            <img src={marumaru} id="project_logo" title="Logo of marumaru.fi" alt="Logo of marumaru.fi" loading="lazy"/>
-          </a>
-          <h3>marumaru</h3>
-          <p><FormattedMessage id='project.marumaru' defaultMessage="owner, admin"/></p>
-        </li>
-        <li className="proj_entry">
-          <a href="https://digit.fi/">
-            <img src={digit} id="project_logo" title="Logo of Digit ry" alt="Logo of Digit ry" loading="lazy"/>
-          </a>
-          <h3>Digit ry</h3>
-          <p><FormattedMessage id='project.digit' defaultMessage="webmaster, graphics"/></p>
-        </li>
-      </ul>
+      <ProjectTable>
+        <ProjectEntry
+          link={"https://marumaru.fi"}
+          image={marumaru}
+          img_alt="Logo of marumaru.fi"
+          headline="marumaru"
+          msg_key="project.marumaru" />
+        <ProjectEntry
+          link={"https://digit.fi"}
+          image={digit}
+          img_alt="Logo of Digit ry"
+          headline="Digit ry"
+          msg_key="project.digit" />
+      </ProjectTable>
     </div>
   </div>
 );

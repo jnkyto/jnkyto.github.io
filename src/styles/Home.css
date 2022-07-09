@@ -67,54 +67,10 @@ li {
     text-shadow: 0 0 8px slategray;
 }
 
-.proj_table {
-    padding: 0;
-    display: inline-flex;
-}
-
-.proj_entry {
-    display: grid;
-    margin-top: 16px;
-    width: 20rem;
-}
-
-.proj_entry h3 {
-    margin: 0.25rem;
-    font-weight: bold;
-    text-shadow: 0 0 8px slategray;
-}
-
-.proj_entry p {
-    margin: 0.25rem;
-}
-
 #meitsi  {
     border-radius: 6px;
     border: 3px solid slategray;
     display: block;
     margin: auto;
     max-width: 256px;
-}
-
-.proj_entry img {
-    max-width: 192px;
-    border-radius: 12px;
-    border: 3px solid slategray;
-
-    opacity: 1;
-    transition: .2s ease;
-}
-
-.proj_entry a:hover img {
-    opacity: 0.5;
-}
-
-@media screen and (max-width: 830px) {
-    .proj_table {
-        display: block;
-    }
-
-    .main_table {
-        display: block;
-    }
 }

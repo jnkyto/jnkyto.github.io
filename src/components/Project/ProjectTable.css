@@ -1,0 +1,14 @@
+.proj_table {
+    padding: 0;
+    display: inline-flex;
+}
+
+@media screen and (max-width: 830px) {
+    .proj_table {
+        display: block;
+    }
+
+    .main_table {
+        display: block;
+    }
+}
