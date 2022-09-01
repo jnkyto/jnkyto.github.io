@@ -21,7 +21,7 @@ const Footer = () => (
                             <a href="https://www.linkedin.com/in/kjoona/">LinkedIn</a>
                         </li>
                         <li>
-                            <a href="https://mastodon.social/@kjoona">Mastodon</a>
+                            <a href="https://twitter.com/jnkyto">Twitter</a>
                         </li>
                     </ul>
                 </td>
