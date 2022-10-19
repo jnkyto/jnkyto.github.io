@@ -1,0 +1,11 @@
+.music_container {
+    display: flex;
+    padding: 2em;
+}
+
+.music_root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

@@ -6,5 +6,6 @@
     "language.change": "(click flag to change language)",
     "bread.projects": "Projects:",
     "project.marumaru": "owner, admin",
-    "project.digit": "webmaster, graphics"
+    "project.digit": "webmaster, graphics",
+    "nothing.here": "Nothing here"
 }
