@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Music from "./pages/Music";
 import Blogs from "./pages/Blogs";
 
-
 const container = document.getElementById('root')
 const root = createRoot(container)
 
@@ -16,8 +15,8 @@ root.render(
   <IntlProviderWrapper>
     <BrowserRouter>
       <Routes>
-        <Route exact  element={<App />}>
-          <Route exact path={"/"} element={<Home />}/>
+        <Route element={<App />}>
+          <Route path={"/"} element={<Home />}/>
           <Route path={"/music"} element={<Music />}/>
           <Route path={"/blogs"} element={<Blogs />}/>
         </Route>

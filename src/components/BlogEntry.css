@@ -1,0 +1,5 @@
+.blog_container img {
+    object-fit: cover;
+    width: 800px;
+    height: 600px;
+}

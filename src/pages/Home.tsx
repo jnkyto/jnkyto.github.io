@@ -1,10 +1,11 @@
-import meitsi from "../img/meitsi.jpg";
+import meitsi from "../img/meitsi.webp";
 import {FormattedMessage} from "react-intl";
 import ProjectTable from "../components/Project/ProjectTable";
 import ProjectEntry from "../components/Project/ProjectEntry";
 import marumaru from "../img/marumaru.webp";
-import digit from "../img/digit.webp";
+import sc from "../img/sc.webp";
 import React from "react";
+import moment from "moment";
 
 const Home = () => {
   return (
@@ -19,10 +20,10 @@ const Home = () => {
             <li className="east_side">
               <h1>👷&nbsp;<FormattedMessage id='work.in.progress' defaultMessage="Work in progress"/>&nbsp;🛠️</h1>
               <div className="code_block">
-                <p>name = "Joona Kytöniemi"</p>
-                <p>age = 22</p>
-                <p>occupation = "CSE student"</p>
-                <p>location = "Turku, Finland"</p>
+                <p>name = "Joona Kytöniemi";</p>
+                <p>age = {moment("20000428", "YYYYMMDD").fromNow().slice(0,2)};</p>
+                <p>occupation = "CSE student";</p>
+                <p>location = "Turku, Finland";</p>
               </div>
             </li>
           </ul>
@@ -39,11 +40,11 @@ const Home = () => {
           headline="marumaru"
           msg_key="project.marumaru" />
         <ProjectEntry
-          link={"https://digit.fi"}
-          image={digit}
-          img_alt="Logo of Digit ry"
-          headline="Digit ry"
-          msg_key="project.digit" />
+          link={"https://soundcloud.com"}
+          image={sc}
+          img_alt="Logo of Soundcloud"
+          headline="music"
+          msg_key="project.music" />
       </ProjectTable>
     </div>
   </div>
