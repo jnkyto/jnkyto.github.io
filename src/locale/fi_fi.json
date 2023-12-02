@@ -1,11 +1,13 @@
 {
     "test.text": "Testiteksti",
     "work.in.progress": "Työn alla",
+    "information": "Itsestäni",
     "author.name": " ",
     "contact": "Yhteydenotot",
     "language.change": "(klikkaa lippua vaihtaaksesi kieltä)",
     "bread.projects": "Projektit:",
     "project.marumaru": "omistaja, admin",
     "project.music": "oon tosi taiteellinen",
-    "nothing.here": "Ei tääl oo mitään"
+    "nothing.here": "Ei tääl oo mitään",
+    "music.info": "tää on vaan mun vanhaa musaa. mulla on uus projekti mut teidän täytyy odottaa."
 }

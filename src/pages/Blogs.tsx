@@ -11,10 +11,7 @@ const Blogs = () => {
       <div className={"blogs_root"}>
         <h1 style={{color: "white", textAlign: "center"}}>
           <div>
-            <BlogEntry
-              date={"2022-10-24"}
-              title={"i gave up on this functionality"}
-              desc={"i am going to make a new website soon i think!!"}/>
+            <h3><FormattedMessage id={"nothing.here"} /></h3>
           </div>
         </h1>
       </div>

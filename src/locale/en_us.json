@@ -1,11 +1,13 @@
 {
     "test.text": "Test text",
     "work.in.progress": "Work in progress",
+    "information": "About me",
     "author.name": " ",
     "contact": "Contact",
     "language.change": "(click flag to change language)",
     "bread.projects": "Projects:",
     "project.marumaru": "owner, admin",
     "project.music": "i am very artistic",
-    "nothing.here": "Nothing here"
+    "nothing.here": "Nothing here",
+    "music.info": "this is just my old music. i have an ongoing project but you guys'll have to wait and see."
 }

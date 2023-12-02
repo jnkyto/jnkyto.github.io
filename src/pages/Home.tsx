@@ -8,22 +8,24 @@ import React from "react";
 import moment from "moment";
 
 const Home = () => {
+  moment.relativeTimeRounding(Math.floor)
   return (
     <div className="home">
       <div className="main_root">
         <div className="main_container">
           <ul className="main_table">
             <li className="west_side">
-              <img src={meitsi} id="meitsi" title="Me, looking at the camera with a stupid suprised smile."
-                   alt="Me, looking at the camera with a stupid suprised smile." loading="lazy"/>
+              <img src={meitsi} id="meitsi" title="Me, posing for the camera like a big dumbo with Tokyo skyline on the background"
+                   alt="Me, posing for the camera like a big dumbo with Tokyo skyline on the background" loading="lazy"/>
             </li>
             <li className="east_side">
-              <h1>👷&nbsp;<FormattedMessage id='work.in.progress' defaultMessage="Work in progress"/>&nbsp;🛠️</h1>
+              <h1>🗣️&nbsp;&nbsp;<FormattedMessage id='information' defaultMessage="Work in progress"/>&nbsp;&nbsp;ℹ️</h1>
               <div className="code_block">
                 <p>name = "Joona Kytöniemi";</p>
                 <p>age = {moment("20000428", "YYYYMMDD").fromNow().slice(0,2)};</p>
-                <p>occupation = "CSE student";</p>
                 <p>location = "Turku, Finland";</p>
+                <p>occupation = ["research assistant", "student"];</p>
+                <p>hobbies = "too many"</p>
               </div>
             </li>
           </ul>

@@ -1,11 +1,13 @@
 {
     "test.text": "テスト文字列",
     "work.in.progress": "進行中の作業",
+    "information": "私について",
     "author.name": "キュトニエミ・ヨーナ / ",
     "contact": "連絡を",
     "language.change": "(言語を変更するには旗をクリックして)",
     "bread.projects": "プロジェクト:",
     "project.marumaru": "持ち主、 アドミン",
     "project.music": "俺とても芸術的",
-    "nothing.here": "ここには何もない"
+    "nothing.here": "ここには何もない",
+    "music.info": "これはただ俺の古い音楽だ。新しいプロジェクトはあるんですけどちょっと待ってね。"
 }

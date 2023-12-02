@@ -43,7 +43,7 @@ li {
 }
 
 .code_block p {
-    margin: 0 0 0 0.75rem;
+    margin: 0 0 0.4rem 0.75rem;
     text-align: left;
     font-family: Courier, serif;
     font-size: 0.75rem;
