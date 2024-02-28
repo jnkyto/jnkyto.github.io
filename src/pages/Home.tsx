@@ -25,7 +25,7 @@ const Home = () => {
                 <p>age = {moment("20000428", "YYYYMMDD").fromNow().slice(0,2)};</p>
                 <p>location = "Turku, Finland";</p>
                 <p>occupation = ["research assistant", "student"];</p>
-                <p>hobbies = "too many"</p>
+                <p>hobbies = "too many";</p>
               </div>
             </li>
           </ul>
