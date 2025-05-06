@@ -2,12 +2,13 @@
     "test.text": "テスト文字列",
     "work.in.progress": "進行中の作業",
     "information": "私について",
+    "gpg.display": "PGP鍵を表示",
     "author.name": "キュトニエミ・ヨーナ / ",
     "contact": "連絡を",
     "language.change": "(言語を変更するには旗をクリックして)",
     "bread.projects": "プロジェクト:",
-    "project.marumaru": "持ち主、 アドミン",
-    "project.music": "俺とても芸術的",
+    "project.marumaru": "オーナー、 アドミン",
+    "project.music": "とても芸術的、私は",
     "nothing.here": "ここには何もない",
-    "music.info": "これはただ俺の古い音楽だ。新しいプロジェクトはあるんですけどちょっと待ってね。"
+    "music.info": "これは私の古い音楽だけです。進行中のプロジェクトがありますが、皆さんは待って見る必要があります。"
 }

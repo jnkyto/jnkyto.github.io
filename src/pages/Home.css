@@ -2,6 +2,20 @@ li {
     list-style-type: none;
 }
 
+button {
+    background-color: slategray;
+    color: white;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    margin-left: 0.75rem;
+    margin-top: 1rem;
+}
+
 .home  {
     width: 100%;
     flex: 0;
@@ -19,7 +33,8 @@ li {
 }
 
 .main_table {
-    padding: 0;
+    padding-left: 0;
+    padding-bottom: 2.5rem;
     display: inline-flex;
     margin: auto;
 }
@@ -30,7 +45,7 @@ li {
 
 .main_table h1    {
     text-align: center;
-    margin: 2em;
+    margin: 1em;
     color: white;
     font-size: 1em;
     font-weight: bold;

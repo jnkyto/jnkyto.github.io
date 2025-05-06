@@ -7,6 +7,21 @@ import sc from "../img/sc.webp";
 import React from "react";
 import moment from "moment";
 
+const pgp_key = "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
+  "\n" +
+  "mDMEaBm7AxYJKwYBBAHaRw8BAQdA2VIahlYYYNcQX1UUHVzMSpbrHcgnL3fZnWgP\n" +
+  "v+29tQW0JUpvb25hIEt5dMO2bmllbWkgPGtqb29uYUBvdXRsb29rLmNvbT6ImQQT\n" +
+  "FgoAQRYhBEAl0/+GrSAOgQdm2jLRAX6g3tv8BQJoGbsDAhsDBQkFo5qABQsJCAcC\n" +
+  "AiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEDLRAX6g3tv8zyIBAPUXHoq6EPE08Dv7\n" +
+  "m8cCWyUqKjwhXK9O/A/NkrONYvsGAP44d0AkmV9XC1CeduUt7F+TAekUWurBCoFj\n" +
+  "V7pCR75jC7g4BGgZuwMSCisGAQQBl1UBBQEBB0AKOMNrJeIWHb0yK7Yda8CYf5BQ\n" +
+  "dLXWgUnJDBrVGYBrPAMBCAeIfgQYFgoAJhYhBEAl0/+GrSAOgQdm2jLRAX6g3tv8\n" +
+  "BQJoGbsDAhsMBQkFo5qAAAoJEDLRAX6g3tv8iBwA/389RCaz5AAuIbY0JyLLc6nZ\n" +
+  "nya+iWe60CVdnN9RpeX9AQCgvvgJYGV1COgXN4bIJoYUYhosx3z5KzG587aCfnix\n" +
+  "AQ==\n" +
+  "=D0Jj\n" +
+  "-----END PGP PUBLIC KEY BLOCK-----"
+
 const Home = () => {
   moment.relativeTimeRounding(Math.floor)
   return (
@@ -26,6 +41,9 @@ const Home = () => {
                 <p>location = "Turku, Finland";</p>
                 <p>occupation = ["research assistant", "student"];</p>
                 <p>hobbies = "too many";</p>
+                <button onClick={() => alert(pgp_key)}>
+                  <FormattedMessage id="gpg.display" defaultMessage="Display PGP-key"/>
+                </button>
               </div>
             </li>
           </ul>
