@@ -1,7 +1,7 @@
 {
   "name": "kytoniemi",
   "homepage": "https://jnkyto.github.io/",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "private": true,
   "dependencies": {
     "babel-plugin-formatjs": "^10.3.28",
@@ -12,6 +12,7 @@
     "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
     "react-intl": "^6.1.0",
     "react-markdown": "^8.0.3",
     "react-router-dom": "^6.4.2",

@@ -4,6 +4,7 @@ import ProjectTable from "../components/Project/ProjectTable";
 import ProjectEntry from "../components/Project/ProjectEntry";
 import marumaru from "../img/marumaru.webp";
 import sc from "../img/sc.webp";
+import { LuClipboardCopy } from "react-icons/lu";
 import React from "react";
 import moment from "moment";
 
@@ -41,8 +42,13 @@ const Home = () => {
                 <p>location = "Turku, Finland";</p>
                 <p>occupation = ["research assistant", "student"];</p>
                 <p>hobbies = "too many";</p>
-                <button onClick={() => alert(pgp_key)}>
-                  <FormattedMessage id="gpg.display" defaultMessage="Display PGP-key"/>
+                <button onClick={() => {
+                  navigator.clipboard.writeText(pgp_key).then(r => null)
+                }}>
+                  <div style={{display: "inline-flex", margin: "auto"}}>
+                    <LuClipboardCopy style={{width: 16, height: 16, marginRight: 4}}/>
+                    <p style={{margin: "auto", fontFamily: "sans-serif"}}><FormattedMessage id="gpg.copy" defaultMessage="Copy PGP-key"/></p>
+                  </div>
                 </button>
               </div>
             </li>
