@@ -23,6 +23,8 @@ const pgp_key = "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
   "=D0Jj\n" +
   "-----END PGP PUBLIC KEY BLOCK-----"
 
+const ClipboardIcon = LuClipboardCopy as React.ComponentType<React.SVGProps<SVGSVGElement>>;
+
 const Home = () => {
   moment.relativeTimeRounding(Math.floor)
   return (
@@ -34,6 +36,7 @@ const Home = () => {
               <img src={meitsi} id="meitsi" title="Me, posing for the camera like a big dumbo with Tokyo skyline on the background"
                    alt="Me, posing for the camera like a big dumbo with Tokyo skyline on the background" loading="lazy"/>
             </li>
+            <li className="spacer" />
             <li className="east_side">
               <h1>🗣️&nbsp;&nbsp;<FormattedMessage id='information' defaultMessage="Work in progress"/>&nbsp;&nbsp;ℹ️</h1>
               <div className="code_block">
@@ -46,7 +49,7 @@ const Home = () => {
                   navigator.clipboard.writeText(pgp_key).then(r => null)
                 }}>
                   <div style={{display: "inline-flex", margin: "auto"}}>
-                    <LuClipboardCopy style={{width: 16, height: 16, marginRight: 4}}/>
+                    <ClipboardIcon style={{width: 16, height: 16, marginRight: 4}}/>
                     <p style={{margin: "auto", fontFamily: "sans-serif"}}><FormattedMessage id="gpg.copy" defaultMessage="Copy PGP-key"/></p>
                   </div>
                 </button>
@@ -55,6 +58,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
+      {/*
     <div className="divider"/>
     <div className="bread">
       <h1><FormattedMessage id='bread.projects' defaultMessage="Projects:"/></h1>
@@ -73,6 +77,7 @@ const Home = () => {
           msg_key="project.music" />
       </ProjectTable>
     </div>
+      */}
   </div>
   )
 }

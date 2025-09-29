@@ -1,9 +1,6 @@
 import "./Blogs.css"
 import {FormattedMessage} from "react-intl";
 import React from "react";
-import { getAllPublished } from "../util/md";
-import {Link} from "react-router-dom";
-import BlogEntry from "../components/BlogEntry";
 
 const Blogs = () => {
   return (

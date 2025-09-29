@@ -52,6 +52,10 @@ button {
     text-shadow: 0 0 8px slategray;
 }
 
+.spacer {
+    width: 32px;
+}
+
 .east_side {
     width: 256px;
     color: white;
