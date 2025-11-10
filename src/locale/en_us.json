@@ -10,5 +10,10 @@
     "project.marumaru": "owner, admin",
     "project.music": "i am very artistic",
     "nothing.here": "Nothing here",
-    "music.info": "this is just my old music. i have an ongoing project but you guys'll have to wait and see."
+    "music.info": "This is just my old music. I have an ongoing project but you will have to wait and see.",
+    "bio.name": "name = \"Joona Kytöniemi\"",
+    "bio.age": "age = ",
+    "bio.location": "location = \"Turku, Finland\"",
+    "bio.occupation": "occupation = [\"student\", \"research assistant\"]",
+    "bio.hobbies": "hobbies = \"too many\""
 }

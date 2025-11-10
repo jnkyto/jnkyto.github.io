@@ -9,6 +9,11 @@
     "bread.projects": "Projektit:",
     "project.marumaru": "omistaja, admin",
     "project.music": "oon tosi taiteellinen",
-    "nothing.here": "Ei tääl oo mitään",
-    "music.info": "tää on vaan mun vanhaa musaa. mulla on uus projekti mut teidän täytyy odottaa."
+    "nothing.here": "Täällä ei ole mitään.",
+    "music.info": "Tässä on vanhaa musiikkiani. Tällä hetkellä minulla on meneillään uusi projekti, mutta älkää odottako sormet ristissä.",
+    "bio.name": "nimi = \"Joona Kytöniemi\"",
+    "bio.age": "ikä = ",
+    "bio.location": "sijainti = \"Turku\"",
+    "bio.occupation": "ammatti = [\"opiskelija\", \"tutkimusavustaja\"]",
+    "bio.hobbies": "harrastukset = \"liian monta\""
 }
