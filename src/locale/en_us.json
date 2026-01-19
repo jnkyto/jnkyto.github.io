@@ -14,6 +14,6 @@
     "bio.name": "name = \"Joona Kytöniemi\"",
     "bio.age": "age = ",
     "bio.location": "location = \"Turku, Finland\"",
-    "bio.occupation": "occupation = [\"student\", \"research assistant\"]",
+    "bio.occupation": "occupation = [\"student\", \"dilettante\"]",
     "bio.hobbies": "hobbies = \"too many\""
 }
