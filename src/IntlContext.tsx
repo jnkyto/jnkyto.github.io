@@ -4,11 +4,31 @@ import English from './locale/en_us.json';
 import Finnish from './locale/fi_fi.json';
 import Japanese from './locale/ja_jp.json';
 
-const Context = React.createContext(undefined);
+interface IntlContextType {
+  locale: string;
+  messages: Record<string, string>;
+  switchToEnglish: () => void;
+  switchToFinnish: () => void;
+  switchToJapanese: () => void;
+}
 
-class IntlProviderWrapper extends React.Component {
-  constructor(...args)  {
-    super(...args);
+const Context = React.createContext<IntlContextType | undefined>(undefined);
+
+interface IntlProviderWrapperProps {
+  children: React.ReactNode;
+}
+
+interface IntlProviderWrapperState {
+  locale: string;
+  messages: Record<string, string>;
+  switchToEnglish: () => void;
+  switchToFinnish: () => void;
+  switchToJapanese: () => void;
+}
+
+class IntlProviderWrapper extends React.Component<IntlProviderWrapperProps, IntlProviderWrapperState> {
+  constructor(props: IntlProviderWrapperProps)  {
+    super(props);
 
     this.switchToEnglish = () =>
       this.setState({ locale: "en", messages: English });
@@ -27,6 +47,10 @@ class IntlProviderWrapper extends React.Component {
       switchToJapanese: this.switchToJapanese
     };
   }
+
+  switchToEnglish: () => void;
+  switchToFinnish: () => void;
+  switchToJapanese: () => void;
 
     render() {
       const { children } = this.props;

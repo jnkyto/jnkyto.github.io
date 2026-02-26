@@ -1,8 +1,9 @@
 import meitsi from "../img/meitsi.webp";
 import {FormattedMessage} from "react-intl";
 import { LuClipboardCopy } from "react-icons/lu";
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
+import "./Home.css";
 
 const pgp_key = "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
   "\n" +
@@ -22,6 +23,7 @@ const pgp_key = "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
 const ClipboardIcon = LuClipboardCopy as React.ComponentType<React.SVGProps<SVGSVGElement>>;
 
 const Home = () => {
+  const [showCopyNotification, setShowCopyNotification] = useState(false);
   moment.relativeTimeRounding(Math.floor)
   return (
     <div className="home">
@@ -42,12 +44,20 @@ const Home = () => {
                 <p><FormattedMessage id='bio.occupation' defaultMessage=""/></p>
                 <p><FormattedMessage id='bio.hobbies' defaultMessage=""/></p>
                 <button onClick={() => {
-                  navigator.clipboard.writeText(pgp_key).then(r => null)
-                }}>
+                  navigator.clipboard.writeText(pgp_key).then(_r => {
+                    setShowCopyNotification(true);
+                    setTimeout(() => setShowCopyNotification(false), 2000);
+                  })
+                }} style={{position: "relative"}}>
                   <div style={{display: "inline-flex", margin: "auto"}}>
                     <ClipboardIcon style={{width: 16, height: 16, marginRight: 4}}/>
                     <p style={{margin: "auto", fontFamily: "sans-serif"}}><FormattedMessage id="gpg.copy" defaultMessage="Copy PGP-key"/></p>
                   </div>
+                  {showCopyNotification && (
+                    <div className="copy-notification-popup">
+                      <FormattedMessage id="gpg.copied" defaultMessage="Copied"/>
+                    </div>
+                  )}
                 </button>
               </div>
             </li>

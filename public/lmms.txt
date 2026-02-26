@@ -1,0 +1,2 @@
+# kytonie.me
+> Personal website of Joona Kytöniemi. Currently a master's student at the University of Turku, Finland. Mainly interested in web development, music production and machine learning.
