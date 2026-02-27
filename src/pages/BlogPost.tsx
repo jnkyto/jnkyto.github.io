@@ -74,7 +74,13 @@ const BlogPostView: React.FC = () => {
               <span className="blog-date">
                 {new Date(post.date).toLocaleDateString()}
               </span>
-              <span className="blog-author"><FormattedMessage id={"blogs.author"} defaultMessage="Author:"/> {post.author}</span>
+              <span className="blog-author">
+                <FormattedMessage
+                  id={"blogs.author"}
+                  defaultMessage="Author:"
+                />{" "}
+                {post.author}
+              </span>
             </div>
           </header>
 
