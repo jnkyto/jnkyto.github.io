@@ -93,7 +93,7 @@ const Home = () => {
                   </div>
                   {showCopyNotification && (
                     <div className="copy-notification-popup">
-                      <FormattedMessage
+                      {"✔ "}️<FormattedMessage
                         id="gpg.copied"
                         defaultMessage="Copied"
                       />

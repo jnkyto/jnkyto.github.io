@@ -18,7 +18,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: #ffffffaa;
+  background: lightgray;
   box-shadow: #ffffff 0px 0px 4px;
   border-radius: 32px;
   height: 42px;
@@ -45,7 +45,7 @@
 
 .ind_link:hover {
   color: black;
-  background: #00000022;
+  background: white;
 }
 
 @media screen and (max-width: 1400px) {

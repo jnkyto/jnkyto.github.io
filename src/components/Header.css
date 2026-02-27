@@ -11,15 +11,7 @@
   margin: auto;
   max-width: 80vw;
   display: inline-table;
-}
-
-.header a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-.header a:hover {
-  color: gray;
+  color: white;
 }
 
 #go-home {

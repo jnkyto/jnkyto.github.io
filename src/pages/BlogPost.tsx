@@ -52,7 +52,7 @@ const BlogPostView: React.FC = () => {
           <h1>Post Not Found</h1>
           <p>The blog post you're looking for doesn't exist.</p>
           <Link to="/blogs" className="back-link">
-            ← Back to Blogs
+            ← <FormattedMessage id={"blogs.back"} defaultMessage="Back" />
           </Link>
         </div>
       </div>
@@ -74,7 +74,7 @@ const BlogPostView: React.FC = () => {
               <span className="blog-date">
                 {new Date(post.date).toLocaleDateString()}
               </span>
-              <span className="blog-author">by {post.author}</span>
+              <span className="blog-author"><FormattedMessage id={"blogs.author"} defaultMessage="Author:"/> {post.author}</span>
             </div>
           </header>
 

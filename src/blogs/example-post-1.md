@@ -11,8 +11,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Heading 2
 
-- **Bullet 1**
-- **Bullet 2**
+Bullet 0
+- Bullet 1
+- Bullet 2
+  - Bullet 2.1
+
+![meitsi](/images/test-0-meitsi.webp)
+![steissi](/images/test-1-steissi.webp)
+![uusikatu](/images/test-2-uusikatu.webp)
 
 ### Heading 3
 
