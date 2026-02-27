@@ -1,37 +1,37 @@
 .proj_entry_container {
-    width: 20rem;
+  width: 20rem;
 }
 
 .proj_entry {
-    display: grid;
-    margin-top: 16px;
+  display: grid;
+  margin-top: 16px;
 }
 
 .proj_entry h3 {
-    margin: 0.25rem;
-    font-weight: bold;
-    text-shadow: 0 0 8px slategray;
+  margin: 0.25rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px slategray;
 }
 
 .proj_entry p {
-    margin: 0.25rem;
+  margin: 0.25rem;
 }
 
 .proj_entry img {
-    max-width: 192px;
-    border-radius: 12px;
-    border: 3px solid slategray;
+  max-width: 192px;
+  border-radius: 12px;
+  border: 3px solid slategray;
 
-    opacity: 1;
-    transition: .2s ease;
+  opacity: 1;
+  transition: 0.2s ease;
 }
 
 .proj_entry a:hover img {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 830px) {
-    .proj_entry_container {
-        width: 100%;
-    }
+  .proj_entry_container {
+    width: 100%;
+  }
 }

@@ -1,55 +1,55 @@
 .ind_container {
-    pointer-events: none;
+  pointer-events: none;
 
-    display: flex;
-    position: absolute;
-    width: 100%;
+  display: flex;
+  position: absolute;
+  width: 100%;
 
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0.6em;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.6em;
 }
 
 .ind_root {
-    pointer-events: auto;
+  pointer-events: auto;
 
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background: #FFFFFFAA;
-    box-shadow: #FFFFFF 0px 0px 4px;
-    border-radius: 32px;
-    height: 42px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ffffffaa;
+  box-shadow: #ffffff 0px 0px 4px;
+  border-radius: 32px;
+  height: 42px;
 }
 
 .ind_links {
-    display: inline-block;
-    padding: 0;
+  display: inline-block;
+  padding: 0;
 }
 
 .ind_links li {
-    display: inline;
-    padding: 0;
+  display: inline;
+  padding: 0;
 }
 
 .ind_link {
-    text-decoration: none;
-    font-size: 1em;
-    color: gray;
-    font-weight: bold;
-    padding: 11px 24px;
-    border-radius: 32px;
+  text-decoration: none;
+  font-size: 1em;
+  color: gray;
+  font-weight: bold;
+  padding: 11px 24px;
+  border-radius: 32px;
 }
 
 .ind_link:hover {
-    color: black;
-    background: #00000022;
+  color: black;
+  background: #00000022;
 }
 
-@media screen and (max-width: 1400px)	 {
-    .ind_container {
-        position: static;
-    }
+@media screen and (max-width: 1400px) {
+  .ind_container {
+    position: static;
+  }
 }

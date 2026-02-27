@@ -1,9 +1,9 @@
-#lang-button  {
+#lang-button {
   margin: 0;
   width: 2.6em;
 }
 
-#lang-button:hover  {
+#lang-button:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -19,7 +19,7 @@
   margin: auto;
   font-weight: normal;
   color: gray;
-  font-size: 1.0em;
+  font-size: 1em;
   text-align: center;
 }
 

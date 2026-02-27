@@ -1,8 +1,8 @@
-import React from 'react';
-import './pages/Home.css';
+import React from "react";
+import "./pages/Home.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       <Outlet />
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default App;

@@ -1,137 +1,137 @@
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 button {
-    background-color: slategray;
-    color: white;
-    height: 2rem;
-    width: 9rem;
-    border-radius: 6px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    cursor: pointer;
-    float: left;
-    margin-left: 0.75rem;
-    margin-top: 1rem;
+  background-color: slategray;
+  color: white;
+  height: 2rem;
+  width: 9rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  float: left;
+  margin-left: 0.75rem;
+  margin-top: 1rem;
 }
 
-.home  {
-    width: 100%;
-    flex: 0;
-    margin-top: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.home {
+  width: 100%;
+  flex: 0;
+  margin-top: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .main_root {
-    width: 100%;
+  width: 100%;
 }
 
 .main_container {
-    text-align: center;
+  text-align: center;
 }
 
 .main_table {
-    padding-left: 0;
-    padding-bottom: 2.5rem;
-    display: inline-flex;
-    margin: auto;
+  padding-left: 0;
+  padding-bottom: 2.5rem;
+  display: inline-flex;
+  margin: auto;
 }
 
 .main_table li {
-    margin: auto;
+  margin: auto;
 }
 
-.main_table h1    {
-    text-align: center;
-    margin: 1em;
-    color: white;
-    font-size: 1em;
-    font-weight: bold;
-    text-shadow: 0 0 8px slategray;
+.main_table h1 {
+  text-align: center;
+  margin: 1em;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-shadow: 0 0 8px slategray;
 }
 
 .spacer {
-    width: 32px;
+  width: 32px;
 }
 
 .east_side {
-    width: 256px;
-    color: white;
+  width: 256px;
+  color: white;
 }
 
 .code_block p {
-    margin: 0 0 0.4rem 0.75rem;
-    text-align: left;
-    font-family: Courier, serif;
-    font-size: 0.75rem;
+  margin: 0 0 0.4rem 0.75rem;
+  text-align: left;
+  font-family: Courier, serif;
+  font-size: 0.75rem;
 }
 
 .divider {
-    height: 1px;
-    background-color: slategray;
-    width: 80%;
-    margin: 1.5rem auto;
+  height: 1px;
+  background-color: slategray;
+  width: 80%;
+  margin: 1.5rem auto;
 }
 
 .bread {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .bread h1 {
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 0 0 8px slategray;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 0 0 8px slategray;
 }
 
-#meitsi  {
-    border-radius: 6px;
-    border: 3px solid slategray;
-    display: block;
-    margin: auto;
-    max-width: 256px;
+#meitsi {
+  border-radius: 6px;
+  border: 3px solid slategray;
+  display: block;
+  margin: auto;
+  max-width: 256px;
 }
 
 @media screen and (max-width: 830px) {
-    .main_table {
-        display: block;
-    }
+  .main_table {
+    display: block;
+  }
 }
 
 .copy-notification-popup {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4a4a4a;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    animation: popupSlideInFadeOut 2s ease-out forwards;
-    pointer-events: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a4a4a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: popupSlideInFadeOut 2s ease-out forwards;
+  pointer-events: none;
 }
 
 @keyframes popupSlideInFadeOut {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(8px);
-    }
-    15% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-    85% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8px);
+  }
+  15% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
 }

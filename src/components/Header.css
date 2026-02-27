@@ -1,50 +1,51 @@
 .header-container {
-    margin: 0;
-    padding-top: 0.3em;
-    padding-bottom: 0.7em;
-    display: flex;
-    background-color: #00000099;
-    border-bottom: 0.2em solid slategray;
+  margin: 0;
+  padding-top: 0.3em;
+  padding-bottom: 0.7em;
+  display: flex;
+  background-color: #00000099;
+  border-bottom: 0.2em solid slategray;
 }
 
-.header  {
-    margin: auto;
-    max-width: 80vw;
-    display: inline-table;
+.header {
+  margin: auto;
+  max-width: 80vw;
+  display: inline-table;
 }
 
-.header a   {
-    color: whitesmoke;
-    text-decoration: none;
+.header a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
-.header a:hover  {
-    color: gray;
+.header a:hover {
+  color: gray;
 }
 
-#go-home  {
-    display: table-cell;
-    width: 40vw;
-    text-align: center;
-    font-size: 2.3em;
+#go-home {
+  display: table-cell;
+  width: 40vw;
+  text-align: center;
+  font-size: 2.3em;
 }
 
-@media screen and (max-width: 830px)	 {
-    .header-container {
-      display: inline-flex;
-    }
+@media screen and (max-width: 830px) {
+  .header-container {
+    display: inline-flex;
+  }
 
-    .header {
-      width: 100vw;
-    }
+  .header {
+    width: 100vw;
+  }
 
-    #go-home  {
-      padding: 1vh;
-    }
+  #go-home {
+    padding: 1vh;
+  }
 
-    .lang {   /* .lang IS DEFINED IN LanguageSwitch.css*/
-      display: table-row;
-      width: 100%;
-      padding-right: 0;
-    }
+  .lang {
+    /* .lang IS DEFINED IN LanguageSwitch.css*/
+    display: table-row;
+    width: 100%;
+    padding-right: 0;
+  }
 }
