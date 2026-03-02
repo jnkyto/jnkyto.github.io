@@ -8,18 +8,18 @@ import "./Home.css";
 const pgp_key =
   "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
   "\n" +
-  "mDMEaBm7AxYJKwYBBAHaRw8BAQdA2VIahlYYYNcQX1UUHVzMSpbrHcgnL3fZnWgP\n" +
-  "v+29tQW0JUpvb25hIEt5dMO2bmllbWkgPGtqb29uYUBvdXRsb29rLmNvbT6ImQQT\n" +
-  "FgoAQRYhBEAl0/+GrSAOgQdm2jLRAX6g3tv8BQJoGbsDAhsDBQkFo5qABQsJCAcC\n" +
-  "AiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEDLRAX6g3tv8zyIBAPUXHoq6EPE08Dv7\n" +
-  "m8cCWyUqKjwhXK9O/A/NkrONYvsGAP44d0AkmV9XC1CeduUt7F+TAekUWurBCoFj\n" +
-  "V7pCR75jC7g4BGgZuwMSCisGAQQBl1UBBQEBB0AKOMNrJeIWHb0yK7Yda8CYf5BQ\n" +
-  "dLXWgUnJDBrVGYBrPAMBCAeIfgQYFgoAJhYhBEAl0/+GrSAOgQdm2jLRAX6g3tv8\n" +
-  "BQJoGbsDAhsMBQkFo5qAAAoJEDLRAX6g3tv8iBwA/389RCaz5AAuIbY0JyLLc6nZ\n" +
-  "nya+iWe60CVdnN9RpeX9AQCgvvgJYGV1COgXN4bIJoYUYhosx3z5KzG587aCfnix\n" +
-  "AQ==\n" +
-  "=D0Jj\n" +
-  "-----END PGP PUBLIC KEY BLOCK-----";
+  "mDMEaaVhlRYJKwYBBAHaRw8BAQdARwQaWxC7KZ31yecWwm1lahamX4QTTjohH4nA\n" +
+  "Vm0AppW0L0pvb25hIEt5dMO2bmllbWkgKHR3ci1mZHIpIDxram9vbmFAb3V0bG9v\n" +
+  "ay5jb20+iJkEExYKAEEWIQTxhK53TPdUwQins7xcnmR3Qy6nyAUCaaVhlQIbAwUJ\n" +
+  "DwmcAAULCQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRBcnmR3Qy6nyKbxAQD5\n" +
+  "DiwlzpqEb1aqf4z8nWLpez20JhgoF+xNpXkx4A3QqgD9GX/XffqwBH63rBV0YJug\n" +
+  "s+R0QjukqdzRe6AU2KnETga4OARppWGVEgorBgEEAZdVAQUBAQdAuhfPMLKh4+v4\n" +
+  "zQt8QNU42xitdw0AIzulB4hdlBbsxmIDAQgHiH4EGBYKACYWIQTxhK53TPdUwQin\n" +
+  "s7xcnmR3Qy6nyAUCaaVhlQIbDAUJDwmcAAAKCRBcnmR3Qy6nyLS5AQDo5OP+ZTYB\n" +
+  "dVBkqlIrt3WbC9Kc6CGJvQAVzquEWS6hRwD8CkQcLRh3TSkTnhQR6U+ovovS31fU\n" +
+  "fML7QD3w1CjobAc=\n" +
+  "=an53\n" +
+  "-----END PGP PUBLIC KEY BLOCK-----\n";
 
 const ClipboardIcon = LuClipboardCopy as React.ComponentType<
   React.SVGProps<SVGSVGElement>
@@ -87,7 +87,7 @@ const Home = () => {
                     <p style={{ margin: "auto", fontFamily: "sans-serif" }}>
                       <FormattedMessage
                         id="gpg.copy"
-                        defaultMessage="Copy PGP-key"
+                        defaultMessage="Copy GPG-key"
                       />
                     </p>
                   </div>
