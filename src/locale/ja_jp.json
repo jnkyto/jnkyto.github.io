@@ -21,5 +21,8 @@
   "blogs.back": "戻る",
   "blogs.read": "読む",
   "blogs.title": "ブログ記事",
-  "loading": "読み込み中..."
+  "loading": "読み込み中...",
+  "notfound.title": "404 - ページが見つからない",
+  "notfound.message": "探したページは削除されたか最初から存在しなかった。",
+  "notfound.redirect": "{seconds}秒後トップに移動する..."
 }

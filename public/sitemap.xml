@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kytonie.me/</loc>
-    <lastmod>2026-03-03</lastmod>
+    <loc>https://kytonie.me/#/</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://kytonie.me/music</loc>
-    <lastmod>2026-03-03</lastmod>
+    <loc>https://kytonie.me/#/music</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://kytonie.me/blogs</loc>
-    <lastmod>2026-03-03</lastmod>
+    <loc>https://kytonie.me/#/blogs</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://kytonie.me/blogs/example-post-1</loc>
-    <lastmod>2026-03-03</lastmod>
+    <loc>https://kytonie.me/#/blogs/example-post-1</loc>
+    <lastmod>2026-02-27</lastmod>
   </url>
 </urlset>

@@ -21,5 +21,8 @@
   "blogs.back": "Takaisin",
   "blogs.read": "Lue",
   "blogs.title": "Blogit",
-  "loading": "Ladataan..."
+  "loading": "Ladataan...",
+  "notfound.title": "404 - Sivua ei löytynyt",
+  "notfound.message": "Tämä sivu on joko poistettu tai sitä ei koskaan ollutkaan.",
+  "notfound.redirect": "Ohjataan etusivulle {seconds} sekunnin kuluttua..."
 }

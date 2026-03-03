@@ -21,5 +21,8 @@
   "blogs.back": "Back",
   "blogs.read": "Read",
   "blogs.title": "Blog Posts",
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "notfound.title": "404 - Page Not Found",
+  "notfound.message": "This page has either been removed or never existed.",
+  "notfound.redirect": "Redirecting to home page in {seconds} seconds..."
 }

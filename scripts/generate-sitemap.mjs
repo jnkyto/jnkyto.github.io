@@ -32,14 +32,32 @@ const getBlogSlugs = async () => {
     .sort((a, b) => a.localeCompare(b));
 };
 
-const buildUrlSet = (baseUrl, slugs) => {
-  const today = toIsoDate(new Date());
-  const routes = [...staticRoutes, ...slugs.map((slug) => `/blogs/${slug}`)];
+const getBlogLastMod = async (slug) => {
+  try {
+    const filePath = path.join(blogsDir, `${slug}.md`);
+    const stats = await fs.stat(filePath);
+    return toIsoDate(stats.mtime);
+  } catch {
+    return toIsoDate(new Date());
+  }
+};
 
-  const urls = routes
+const getStaticRouteLastMod = async () => {
+  try {
+    // Use the modification time of index.html or App.tsx as a proxy for static routes
+    const appPath = path.join(projectRoot, "src", "App.tsx");
+    const stats = await fs.stat(appPath);
+    return toIsoDate(stats.mtime);
+  } catch {
+    return toIsoDate(new Date());
+  }
+};
+
+const buildUrlSet = (baseUrl, routesWithDates) => {
+  const urls = routesWithDates
     .map(
-      (route) =>
-        `  <url>\n    <loc>${baseUrl}${route}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`,
+      ({ route, lastmod }) =>
+        `  <url>\n    <loc>${baseUrl}/#${route}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
     )
     .join("\n");
 
@@ -49,7 +67,20 @@ const buildUrlSet = (baseUrl, slugs) => {
 const main = async () => {
   const baseUrl = await loadBaseUrl();
   const blogSlugs = await getBlogSlugs();
-  const xml = buildUrlSet(baseUrl, blogSlugs);
+  const staticLastMod = await getStaticRouteLastMod();
+
+  // Build routes with their last modification dates
+  const routesWithDates = [
+    ...staticRoutes.map((route) => ({ route, lastmod: staticLastMod })),
+    ...(await Promise.all(
+      blogSlugs.map(async (slug) => ({
+        route: `/blogs/${slug}`,
+        lastmod: await getBlogLastMod(slug),
+      })),
+    )),
+  ];
+
+  const xml = buildUrlSet(baseUrl, routesWithDates);
 
   await fs.writeFile(outputPath, xml, "utf8");
   console.log(`sitemap generated at ${outputPath}`);
