@@ -84,7 +84,13 @@ const Home = () => {
                     <ClipboardIcon
                       style={{ width: 16, height: 16, marginRight: 4 }}
                     />
-                    <p style={{ margin: "auto", fontFamily: "sans-serif" }}>
+                    <p
+                      style={{
+                        margin: "auto",
+                        fontFamily: "sans-serif",
+                        fontSize: 14,
+                      }}
+                    >
                       <FormattedMessage
                         id="gpg.copy"
                         defaultMessage="Copy GPG-key"

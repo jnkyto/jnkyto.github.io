@@ -1,7 +1,7 @@
 {
   "name": "kytonie.me",
-  "homepage": "https://jnkyto.github.io/",
-  "version": "3.4.0",
+  "homepage": "https://kytonie.me/",
+  "version": "3.4.1",
   "private": true,
   "dependencies": {
     "babel-plugin-formatjs": "^11.2",
@@ -18,10 +18,11 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "npm run generate:sitemap && vite build",
     "serve": "vite preview",
     "check": "prettier --check . && eslint src/",
     "fix": "prettier --write . && eslint --fix src/",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

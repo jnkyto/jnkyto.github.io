@@ -6,9 +6,8 @@ button {
   background-color: slategray;
   color: white;
   height: 2rem;
-  width: 9rem;
+  width: 10rem;
   border-radius: 6px;
-  font-size: 0.75rem;
   font-weight: bold;
   cursor: pointer;
   float: left;
@@ -65,7 +64,7 @@ button {
   margin: 0 0 0.4rem 0.75rem;
   text-align: left;
   font-family: Courier, serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .divider {
