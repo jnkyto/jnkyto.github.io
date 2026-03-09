@@ -6,7 +6,7 @@ button {
   background-color: slategray;
   color: white;
   height: 2rem;
-  width: 10rem;
+  width: max-content;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
