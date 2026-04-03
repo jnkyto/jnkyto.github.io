@@ -8,17 +8,18 @@ import "./Home.css";
 const pgp_key =
   "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
   "\n" +
-  "mDMEaaVhlRYJKwYBBAHaRw8BAQdARwQaWxC7KZ31yecWwm1lahamX4QTTjohH4nA\n" +
-  "Vm0AppW0L0pvb25hIEt5dMO2bmllbWkgKHR3ci1mZHIpIDxram9vbmFAb3V0bG9v\n" +
-  "ay5jb20+iJkEExYKAEEWIQTxhK53TPdUwQins7xcnmR3Qy6nyAUCaaVhlQIbAwUJ\n" +
-  "DwmcAAULCQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRBcnmR3Qy6nyKbxAQD5\n" +
-  "DiwlzpqEb1aqf4z8nWLpez20JhgoF+xNpXkx4A3QqgD9GX/XffqwBH63rBV0YJug\n" +
-  "s+R0QjukqdzRe6AU2KnETga4OARppWGVEgorBgEEAZdVAQUBAQdAuhfPMLKh4+v4\n" +
-  "zQt8QNU42xitdw0AIzulB4hdlBbsxmIDAQgHiH4EGBYKACYWIQTxhK53TPdUwQin\n" +
-  "s7xcnmR3Qy6nyAUCaaVhlQIbDAUJDwmcAAAKCRBcnmR3Qy6nyLS5AQDo5OP+ZTYB\n" +
-  "dVBkqlIrt3WbC9Kc6CGJvQAVzquEWS6hRwD8CkQcLRh3TSkTnhQR6U+ovovS31fU\n" +
-  "fML7QD3w1CjobAc=\n" +
-  "=an53\n" +
+  "mDMEac+QlxYJKwYBBAHaRw8BAQdAG+D9KrhT8nPkM1it9b8VXGc5ziF/OQDXaFPR\n" +
+  "7Hf4EVK0WUpvb25hIEt5dMO2bmllbWkgKENoZWNrIGh0dHBzOi8va3l0b25pZS5t\n" +
+  "ZS8gZm9yIGFuIHVwZGF0ZWQgR1BHLWtleS4pIDxram9vbmFAb3V0bG9vay5jb20+\n" +
+  "iJkEExYKAEEWIQRhx9sNdrgDTVfYNbGkttD/uRLCLwUCac+QlwIbAwUJCWYBgAUL\n" +
+  "CQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRCkttD/uRLCL9woAQDUtev2UFPZ\n" +
+  "ZyQFQITmFo2yriw5NXtbsn/Q67YIyrX5nAD7BGQFkVSY3B6ZwMPcVy0UIckYcldl\n" +
+  "WhFzN0WlmWWkTQW4OARpz5CXEgorBgEEAZdVAQUBAQdA3TLgTreWQm/S9YWXqGIR\n" +
+  "DfPhj105+SKdM6ymp9Bmrz0DAQgHiH4EGBYKACYWIQRhx9sNdrgDTVfYNbGkttD/\n" +
+  "uRLCLwUCac+QlwIbDAUJCWYBgAAKCRCkttD/uRLCL250AQC5VtbbXvoeD7YVuTHP\n" +
+  "mtFZlH3gyOxmYL18WudxZPGOLwD/SgNs7uxTPJ5BqL/lW3p2NrT3DntydNZOp7jc\n" +
+  "xs3POgA=\n" +
+  "=Nqp9\n" +
   "-----END PGP PUBLIC KEY BLOCK-----\n";
 
 const ClipboardIcon = LuClipboardCopy as React.ComponentType<
