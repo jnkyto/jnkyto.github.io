@@ -7,7 +7,9 @@ const Header = () => (
   <div className="header-container">
     <header className="header">
       <div className="go-home-container">
-        <Link to="/" className="go-home">kytonie.me</Link>
+        <Link to="/" className="go-home">
+          kytonie.me
+        </Link>
       </div>
       <LanguageSwitch />
     </header>
