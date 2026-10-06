@@ -20,7 +20,7 @@
 .proj_entry img {
   max-width: 192px;
   border-radius: 12px;
-  border: 3px solid slategray;
+  border: 3px solid var(--border-color);
 
   opacity: 1;
   transition: 0.2s ease;

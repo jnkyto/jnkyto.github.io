@@ -1,14 +1,14 @@
-.music_container {
+.full_screen_container {
+  width: 100vw;
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  padding: 2em;
-  text-align: center;
-  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 
-.music_root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.music_wip_text {
+  color: white;
+  text-align: center;
+  max-width: 600px;
 }

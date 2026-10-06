@@ -87,7 +87,7 @@ button {
 
 #meitsi {
   border-radius: 6px;
-  border: 3px solid slategray;
+  border: 3px solid var(--border-color);
   display: block;
   margin: auto;
   max-width: 256px;

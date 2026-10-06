@@ -82,6 +82,9 @@ const BlogPostView: React.FC = () => {
                 {post.author}
               </span>
             </div>
+            <div className="blog-excerpt">
+              <span>{post.excerpt}</span>
+            </div>
           </header>
 
           <div className="blog-content">

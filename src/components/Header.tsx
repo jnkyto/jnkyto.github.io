@@ -1,11 +1,14 @@
 import "./Header.css";
 import React from "react";
 import LanguageSwitch from "./LanguageSwitch";
+import { Link } from "react-router-dom";
 
 const Header = () => (
   <div className="header-container">
     <header className="header">
-      <h1 id="go-home">kytonie.me</h1>
+      <div className="go-home-container">
+        <Link to="/" className="go-home">kytonie.me</Link>
+      </div>
       <LanguageSwitch />
     </header>
   </div>

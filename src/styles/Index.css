@@ -1,3 +1,17 @@
+:root {
+  --text-primary: #f0f0f0;
+  --text-secondary: #ccc;
+  --text-muted: #aaa;
+  --text-heading: #ffffff;
+  --link-color: #a3bffa;
+  --link-hover: #c3d4ff;
+  --border-color: slategray;
+  --code-bg: rgba(255, 255, 255, 0.1);
+  --code-block-bg: #1e1e1e;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+}
+
 body {
   margin: auto;
   font-family:

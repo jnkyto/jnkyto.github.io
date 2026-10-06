@@ -4,7 +4,7 @@
   padding-bottom: 0.7em;
   display: flex;
   background-color: #00000099;
-  border-bottom: 0.2em solid slategray;
+  border-bottom: 0.2em solid var(--border-color);
 }
 
 .header {
@@ -14,11 +14,18 @@
   color: white;
 }
 
-#go-home {
+.go-home-container {
   display: table-cell;
   width: 40vw;
   text-align: center;
+}
+
+.go-home {
+  display: inline-block;
   font-size: 2.3em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 830px) {
