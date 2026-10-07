@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import meitsi from "../img/meitsi.webp";
 import { FormattedMessage } from "react-intl";
 import { LuClipboardCopy } from "react-icons/lu";
 import React, { useState } from "react";
@@ -44,7 +43,7 @@ const Home = () => {
           <ul className="main_table">
             <li className="west_side">
               <img
-                src={meitsi}
+                src="/images/meitsi.webp"
                 id="meitsi"
                 title="Me, back turned to the camera, looking towards Lake Bled in Slovenia"
                 alt="Me, back turned to the camera, looking towards Lake Bled in Slovenia"
