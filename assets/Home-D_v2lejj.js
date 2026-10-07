@@ -1,0 +1,16 @@
+import{i as e}from"./rolldown-runtime-Dd_uD5pT.js";import{_ as t,h as n,m as r,r as i,t as a}from"./vendor-react-CidlIv0A.js";import{t as o}from"./vendor-CEwyJ9zE.js";import"./index-CKHs2SI4.js";var s=`/assets/meitsi-IA0B5zG4.webp`,c=e(t()),l=n(),u=`-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEac+QlxYJKwYBBAHaRw8BAQdAG+D9KrhT8nPkM1it9b8VXGc5ziF/OQDXaFPR
+7Hf4EVK0WUpvb25hIEt5dMO2bmllbWkgKENoZWNrIGh0dHBzOi8va3l0b25pZS5t
+ZS8gZm9yIGFuIHVwZGF0ZWQgR1BHLWtleS4pIDxram9vbmFAb3V0bG9vay5jb20+
+iJkEExYKAEEWIQRhx9sNdrgDTVfYNbGkttD/uRLCLwUCac+QlwIbAwUJCWYBgAUL
+CQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRCkttD/uRLCL9woAQDUtev2UFPZ
+ZyQFQITmFo2yriw5NXtbsn/Q67YIyrX5nAD7BGQFkVSY3B6ZwMPcVy0UIckYcldl
+WhFzN0WlmWWkTQW4OARpz5CXEgorBgEEAZdVAQUBAQdA3TLgTreWQm/S9YWXqGIR
+DfPhj105+SKdM6ymp9Bmrz0DAQgHiH4EGBYKACYWIQRhx9sNdrgDTVfYNbGkttD/
+uRLCLwUCac+QlwIbDAUJCWYBgAAKCRCkttD/uRLCL250AQC5VtbbXvoeD7YVuTHP
+mtFZlH3gyOxmYL18WudxZPGOLwD/SgNs7uxTPJ5BqL/lW3p2NrT3DntydNZOp7jc
+xs3POgA=
+=Nqp9
+-----END PGP PUBLIC KEY BLOCK-----
+`,d=a,f=()=>{let[e,t]=(0,c.useState)(!1);return o.relativeTimeRounding(Math.floor),(0,l.jsxs)(`div`,{className:`home`,children:[(0,l.jsxs)(i,{children:[(0,l.jsx)(`title`,{children:`kytonie.me - The personal website of Joona Kytöniemi`}),(0,l.jsx)(`meta`,{name:`description`,content:`I am a web designer and programmer with experience in both frontend and backend development.`})]}),(0,l.jsx)(`div`,{className:`main_root`,children:(0,l.jsx)(`div`,{className:`main_container`,children:(0,l.jsxs)(`ul`,{className:`main_table`,children:[(0,l.jsx)(`li`,{className:`west_side`,children:(0,l.jsx)(`img`,{src:s,id:`meitsi`,title:`Me, back turned to the camera, looking towards Lake Bled in Slovenia`,alt:`Me, back turned to the camera, looking towards Lake Bled in Slovenia`,loading:`lazy`})}),(0,l.jsx)(`li`,{className:`spacer`}),(0,l.jsxs)(`li`,{className:`east_side`,children:[(0,l.jsxs)(`h1`,{children:[`🗣️\xA0\xA0`,(0,l.jsx)(r,{id:`information`,defaultMessage:`Work in progress`}),`\xA0\xA0ℹ️`]}),(0,l.jsxs)(`div`,{className:`code_block`,children:[(0,l.jsx)(`p`,{children:(0,l.jsx)(r,{id:`bio.name`,defaultMessage:``})}),(0,l.jsxs)(`p`,{children:[(0,l.jsx)(r,{id:`bio.age`,defaultMessage:``}),(0,l.jsx)(`span`,{style:{fontFamily:`Courier`},children:o(`20000428`,`YYYYMMDD`).fromNow().slice(0,2)})]}),(0,l.jsx)(`p`,{children:(0,l.jsx)(r,{id:`bio.location`,defaultMessage:``})}),(0,l.jsx)(`p`,{children:(0,l.jsx)(r,{id:`bio.occupation`,defaultMessage:``})}),(0,l.jsx)(`p`,{children:(0,l.jsx)(r,{id:`bio.hobbies`,defaultMessage:``})}),(0,l.jsxs)(`button`,{onClick:()=>{navigator.clipboard.writeText(u).then(()=>{t(!0),setTimeout(()=>t(!1),2e3)})},style:{position:`relative`},children:[(0,l.jsxs)(`div`,{style:{display:`inline-flex`,margin:`auto`},children:[(0,l.jsx)(d,{style:{width:16,height:16,marginRight:4}}),(0,l.jsx)(`p`,{style:{margin:`auto`,fontFamily:`sans-serif`,fontSize:14},children:(0,l.jsx)(r,{id:`gpg.copy`,defaultMessage:`Copy GPG-key`})})]}),e&&(0,l.jsxs)(`div`,{className:`copy-notification-popup`,children:[`✔ `,`️`,(0,l.jsx)(r,{id:`gpg.copied`,defaultMessage:`Copied`})]})]})]})]})]})})})]})};export{f as default};

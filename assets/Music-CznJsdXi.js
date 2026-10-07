@@ -1,0 +1,1 @@
+import"./rolldown-runtime-Dd_uD5pT.js";import{_ as e,h as t,m as n}from"./vendor-react-CidlIv0A.js";e();var r=t(),i=()=>(0,r.jsx)(`div`,{className:`full_screen_container`,children:(0,r.jsx)(`h1`,{className:`music_wip_text`,children:(0,r.jsx)(n,{id:`work.in.progress`})})});export{i as default};
