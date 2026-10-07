@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import meitsi from "../img/meitsi.webp";
 import { FormattedMessage } from "react-intl";
 import { LuClipboardCopy } from "react-icons/lu";
@@ -31,6 +32,13 @@ const Home = () => {
   moment.relativeTimeRounding(Math.floor);
   return (
     <div className="home">
+      <Helmet>
+        <title>kytonie.me - The personal website of Joona Kytöniemi</title>
+        <meta
+          name="description"
+          content="I am a web designer and programmer with experience in both frontend and backend development."
+        />
+      </Helmet>
       <div className="main_root">
         <div className="main_container">
           <ul className="main_table">

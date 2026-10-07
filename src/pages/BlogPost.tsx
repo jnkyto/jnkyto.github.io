@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { fetchBlogPost, BlogPost } from "../util/blogLoader";
@@ -61,6 +62,12 @@ const BlogPostView: React.FC = () => {
 
   return (
     <div className="blog-post-container">
+      <Helmet>
+        <title>{`kytonie.me - ${post.title}`}</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={`kytonie.me - ${post.title}`} />
+        <meta property="og:description" content={post.excerpt} />
+      </Helmet>
       <div className="blog-post-content">
         <Link to="/blogs" className="back-link">
           {"← "}

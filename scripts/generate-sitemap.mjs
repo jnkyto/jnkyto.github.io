@@ -57,7 +57,7 @@ const buildUrlSet = (baseUrl, routesWithDates) => {
   const urls = routesWithDates
     .map(
       ({ route, lastmod }) =>
-        `  <url>\n    <loc>${baseUrl}/#${route}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
+        `  <url>\n    <loc>${baseUrl}${route === "/" ? "/" : route}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
     )
     .join("\n");
 
