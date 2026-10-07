@@ -57,7 +57,10 @@ const main = async () => {
     // but just in case, wait for a root element to not be empty
     await page.waitForSelector("#root > *", { timeout: 10000 }).catch(() => {});
 
-    const html = await page.content();
+    let html = await page.content();
+
+    // Remove the localhost URL from dynamically injected links (like modulepreload)
+    html = html.replace(new RegExp(`http://localhost:${port}`, "g"), "");
 
     // 5. Save HTML
     const filePath =
