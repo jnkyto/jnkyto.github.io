@@ -3,6 +3,7 @@ title: "Test Post"
 date: "2026-02-27"
 author: "Joona"
 excerpt: "This is a test post."
+heroImage: "/images/test-1-steissi.webp"
 ---
 
 # Heading 1
@@ -69,4 +70,4 @@ any potential mistakes, even regarding basic stuff.
 **To be continued...**  
 _(I accidentally bundled the draft post with the deployment and I will finish writing this later)_`,n=e=>{if(!e.startsWith(`---`))return{data:{},content:e};let t=e.indexOf(`
 ---`,3);if(t===-1)return{data:{},content:e};let n=e.slice(3,t).trim(),r=e.slice(t+3+1).trimStart(),i={};return n.split(`
-`).forEach(e=>{let t=e.indexOf(`:`);if(t===-1)return;let n=e.slice(0,t).trim(),r=e.slice(t+1).trim().replace(/^"|"$/g,``);n&&(i[n]=r)}),{data:i,content:r}},r=Object.assign({"../blogs/example-post-1.md":e,"../blogs/hashidoi-project-description.md":t}),i=e=>(e.split(`/`).pop()||``).replace(`.md`,``),a=()=>Object.keys(r).map(i),o=e=>{let t=Object.keys(r).find(t=>i(t)===e);return t?r[t]:null},s=async e=>{try{let t=o(e);if(!t)return null;let{data:r,content:i}=n(t);return{slug:e,title:r.title||`No Title`,date:r.date||``,author:r.author||`Unknown`,excerpt:r.excerpt||``,content:i}}catch(t){return console.error(`Error fetching blog post ${e}:`,t),null}},c=async()=>(await Promise.all(a().map(async e=>{let t=await s(e);return t?{slug:t.slug,title:t.title,date:t.date,author:t.author,excerpt:t.excerpt}:null}))).filter(e=>e!==null).sort((e,t)=>new Date(t.date).getTime()-new Date(e.date).getTime());export{s as n,c as t};
+`).forEach(e=>{let t=e.indexOf(`:`);if(t===-1)return;let n=e.slice(0,t).trim(),r=e.slice(t+1).trim().replace(/^"|"$/g,``);n&&(i[n]=r)}),{data:i,content:r}},r=Object.assign({"../blogs/example-post-1.md":e,"../blogs/hashidoi-project-description.md":t}),i=e=>(e.split(`/`).pop()||``).replace(`.md`,``),a=()=>Object.keys(r).map(i),o=e=>{let t=Object.keys(r).find(t=>i(t)===e);return t?r[t]:null},s=async e=>{try{let t=o(e);if(!t)return null;let{data:r,content:i}=n(t);return{slug:e,title:r.title||`No Title`,date:r.date||``,author:r.author||`Unknown`,excerpt:r.excerpt||``,heroImage:r.heroImage||`/images/placeholder-image.webp`,content:i}}catch(t){return console.error(`Error fetching blog post ${e}:`,t),null}},c=async()=>(await Promise.all(a().map(async e=>{let t=await s(e);return t?{slug:t.slug,title:t.title,date:t.date,author:t.author,heroImage:t.heroImage,excerpt:t.excerpt}:null}))).filter(e=>e!==null).sort((e,t)=>new Date(t.date).getTime()-new Date(e.date).getTime());export{s as n,c as t};

@@ -1,0 +1,1 @@
+import"./rolldown-runtime-Dd_uD5pT.js";import{g as e,h as t,v as n}from"./vendor-react-CggolV75.js";import{t as r}from"./SEO-l1IzIOU0.js";n();var i=e(),a=()=>(0,i.jsxs)(`div`,{className:`full_screen_container`,children:[(0,i.jsx)(r,{title:`Music - kytonie.me`}),(0,i.jsx)(`h1`,{className:`music_wip_text`,children:(0,i.jsx)(t,{id:`work.in.progress`})})]});export{a as default};
