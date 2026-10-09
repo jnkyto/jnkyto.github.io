@@ -3,7 +3,7 @@ title: "Test Post"
 date: "2026-02-27"
 author: "Joona"
 excerpt: "This is a test post."
-heroImage: "/images/test-1-steissi.webp"
+heroImage: "/images/blogs/example-post-1/hero.webp"
 ---
 
 # Heading 1
@@ -17,9 +17,9 @@ Bullet 0
 - Bullet 2
   - Bullet 2.1
 
-![meitsi](/images/test-0-meitsi.webp)
-![steissi](/images/test-1-steissi.webp)
-![uusikatu](/images/test-2-uusikatu.webp)
+![meitsi](/images/blogs/example-post-1/test-0-meitsi.webp)
+![steissi](/images/blogs/example-post-1/test-1-steissi.webp)
+![uusikatu](/images/blogs/example-post-1/test-2-uusikatu.webp)
 
 ### Heading 3
 
