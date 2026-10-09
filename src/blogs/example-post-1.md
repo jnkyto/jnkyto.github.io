@@ -3,6 +3,7 @@ title: "Test Post"
 date: "2026-02-27"
 author: "Joona"
 excerpt: "This is a test post."
+heroImage: "/images/test-1-steissi.webp"
 ---
 
 # Heading 1

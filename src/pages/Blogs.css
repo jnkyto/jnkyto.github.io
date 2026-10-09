@@ -34,11 +34,11 @@
   background: var(--card-bg);
   border: 3px solid var(--border-color);
   border-radius: 6px;
-  padding: 2rem;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: block;
+  overflow: hidden;
 }
 
 .blog_card:hover {
@@ -46,10 +46,18 @@
   background: var(--card-bg-hover);
 }
 
+.blog_card_image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
 .blog_card article {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 1.5rem;
 }
 
 .blog_card_title {
@@ -100,8 +108,8 @@
     gap: 1.5rem;
   }
 
-  .blog_card {
-    padding: 1.5rem;
+  .blog_card article {
+    padding: 1.25rem;
   }
 
   .blog_card_title {

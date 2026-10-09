@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { fetchBlogPost, BlogPost } from "../util/blogLoader";
 import "./BlogPost.css";
 import { FormattedMessage } from "react-intl";
+import SEO from "../components/SEO";
 
 const BlogPostView: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -39,6 +39,7 @@ const BlogPostView: React.FC = () => {
   if (loading) {
     return (
       <div className="blog-post-container">
+        <SEO title="Loading... - kytonie.me" />
         <div className="blog-post-content">
           <p>Loading...</p>
         </div>
@@ -49,6 +50,7 @@ const BlogPostView: React.FC = () => {
   if (error || !post) {
     return (
       <div className="blog-post-container">
+        <SEO title="Not Found - kytonie.me" />
         <div className="blog-post-content">
           <h1>Post Not Found</h1>
           <p>The blog post you're looking for doesn't exist.</p>
@@ -62,12 +64,16 @@ const BlogPostView: React.FC = () => {
 
   return (
     <div className="blog-post-container">
-      <Helmet>
-        <title>{`kytonie.me - ${post.title}`}</title>
-        <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={`kytonie.me - ${post.title}`} />
-        <meta property="og:description" content={post.excerpt} />
-      </Helmet>
+      <SEO
+        title={`${post.title} - kytonie.me`}
+        description={post.excerpt}
+        image={
+          post.heroImage.startsWith("/")
+            ? `https://kytonie.me${post.heroImage}`
+            : post.heroImage
+        }
+        type="article"
+      />
       <div className="blog-post-content">
         <Link to="/blogs" className="back-link">
           {"← "}
@@ -93,6 +99,12 @@ const BlogPostView: React.FC = () => {
               <span>{post.excerpt}</span>
             </div>
           </header>
+
+          {post.heroImage && (
+            <div className="blog-hero-image">
+              <img src={post.heroImage} alt={post.title} />
+            </div>
+          )}
 
           <div className="blog-content">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>

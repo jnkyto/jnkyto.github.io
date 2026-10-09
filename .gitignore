@@ -11,6 +11,9 @@
 # production
 /build
 
+# ai
+.agents
+
 # misc
 .DS_Store
 .env.local

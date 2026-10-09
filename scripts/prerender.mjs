@@ -31,11 +31,16 @@ const main = async () => {
   // Extract paths from URLs (e.g., https://kytonie.me/blogs -> /blogs)
   const routes = urls.map((url) => new URL(url).pathname);
 
+  // Read pristine index.html into memory so we don't serve the modified one
+  const pristineIndexPath = path.join(buildDir, "index.html");
+  const pristineIndexHtml = await fs.readFile(pristineIndexPath, "utf-8");
+
   // Start Express server for SPA
   const app = express();
-  app.use(express.static(buildDir));
+  // Don't serve index.html automatically from the static folder
+  app.use(express.static(buildDir, { index: false }));
   app.use((req, res) => {
-    res.sendFile(path.join(buildDir, "index.html"));
+    res.send(pristineIndexHtml);
   });
 
   const server = app.listen(0);
@@ -56,6 +61,23 @@ const main = async () => {
     // Ensure React has hydrated and rendered. Networkidle0 usually covers this,
     // but just in case, wait for a root element to not be empty
     await page.waitForSelector("#root > *", { timeout: 10000 }).catch(() => {});
+
+    // Clean up duplicate SEO tags (keep the last/deepest one injected by Helmet)
+    // await page.evaluate(() => {
+    //   const tags = Array.from(document.head.querySelectorAll("meta[name], meta[property], title"));
+    //   const seen = new Set();
+    //   for (let i = tags.length - 1; i >= 0; i--) {
+    //     const tag = tags[i];
+    //     // Don't deduplicate generic meta tags that shouldn't be unique like keywords (if you had multiples, though here we just use one)
+    //     // Wait, name/property are unique enough for SEO tags.
+    //     const key = tag.tagName === "TITLE" ? "title" : (tag.getAttribute("name") || tag.getAttribute("property"));
+    //     if (seen.has(key)) {
+    //       tag.remove();
+    //     } else {
+    //       seen.add(key);
+    //     }
+    //   }
+    // });
 
     let html = await page.content();
 

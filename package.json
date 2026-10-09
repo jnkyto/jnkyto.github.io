@@ -1,7 +1,7 @@
 {
   "name": "kytonie.me",
   "homepage": "https://kytonie.me/",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "private": true,
   "dependencies": {
     "babel-plugin-formatjs": "^13.0",

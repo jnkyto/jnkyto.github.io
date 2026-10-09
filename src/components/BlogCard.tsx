@@ -8,6 +8,10 @@ interface BlogCardProps {
 
 const BlogCard = ({ post }: BlogCardProps) => (
   <Link to={`/blogs/${post.slug}`} className="blog_card">
+    <div
+      className="blog_card_image"
+      style={{ backgroundImage: `url(${post.heroImage})` }}
+    />
     <article>
       <h2 className="blog_card_title">{post.title}</h2>
       <div className="blog_card_meta">

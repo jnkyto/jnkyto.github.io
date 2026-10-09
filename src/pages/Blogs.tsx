@@ -3,6 +3,7 @@ import { FormattedMessage } from "react-intl";
 import React, { useEffect, useState } from "react";
 import { fetchAllBlogPosts, BlogMetadata } from "../util/blogLoader";
 import BlogCard from "../components/BlogCard";
+import SEO from "../components/SEO";
 
 const Blogs: React.FC = () => {
   const [posts, setPosts] = useState<BlogMetadata[]>([]);
@@ -21,6 +22,7 @@ const Blogs: React.FC = () => {
 
   return (
     <div className={"blogs_container"}>
+      <SEO title="Blogs - kytonie.me" />
       <div className={"blogs_root"}>
         {loading ? (
           <div className="blogs_loading">

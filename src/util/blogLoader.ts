@@ -32,6 +32,7 @@ export interface BlogPost {
   date: string;
   author: string;
   excerpt: string;
+  heroImage: string;
   content: string;
 }
 
@@ -40,6 +41,7 @@ export interface BlogMetadata {
   title: string;
   date: string;
   author: string;
+  heroImage: string;
   excerpt: string;
 }
 
@@ -81,6 +83,7 @@ export const fetchBlogPost = async (slug: string): Promise<BlogPost | null> => {
       date: data.date || "",
       author: data.author || "Unknown",
       excerpt: data.excerpt || "",
+      heroImage: data.heroImage || "/images/placeholder-image.webp",
       content,
     };
   } catch (error) {
@@ -101,6 +104,7 @@ export const fetchAllBlogPosts = async (): Promise<BlogMetadata[]> => {
         title: post.title,
         date: post.date,
         author: post.author,
+        heroImage: post.heroImage,
         excerpt: post.excerpt,
       };
     }),

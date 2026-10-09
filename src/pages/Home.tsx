@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { FormattedMessage } from "react-intl";
 import { LuClipboardCopy } from "react-icons/lu";
 import React, { useState } from "react";
 import moment from "moment";
+import SEO from "../components/SEO";
 import "./Home.css";
 
 const pgp_key =
@@ -31,13 +31,7 @@ const Home = () => {
   moment.relativeTimeRounding(Math.floor);
   return (
     <div className="home">
-      <Helmet>
-        <title>kytonie.me - The personal website of Joona Kytöniemi</title>
-        <meta
-          name="description"
-          content="I am a web designer and programmer with experience in both frontend and backend development."
-        />
-      </Helmet>
+      <SEO />
       <div className="main_root">
         <div className="main_container">
           <ul className="main_table">
