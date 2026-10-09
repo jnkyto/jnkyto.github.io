@@ -69,7 +69,6 @@ const main = async () => {
     //   for (let i = tags.length - 1; i >= 0; i--) {
     //     const tag = tags[i];
     //     // Don't deduplicate generic meta tags that shouldn't be unique like keywords (if you had multiples, though here we just use one)
-    //     // Wait, name/property are unique enough for SEO tags.
     //     const key = tag.tagName === "TITLE" ? "title" : (tag.getAttribute("name") || tag.getAttribute("property"));
     //     if (seen.has(key)) {
     //       tag.remove();
