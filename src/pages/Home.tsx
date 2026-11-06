@@ -87,7 +87,7 @@ const Home = () => {
                       style={{ width: 16, height: 16, marginRight: 4 }}
                       aria-label={"Copy to clipboard"}
                     />
-                    <p
+                    <span
                       style={{
                         margin: "auto",
                         fontFamily: "sans-serif",
@@ -98,7 +98,7 @@ const Home = () => {
                         id="gpg.copy"
                         defaultMessage="Copy GPG-key"
                       />
-                    </p>
+                    </span>
                   </span>
                   {showCopyNotification && (
                     <span className="copy-notification-popup">
