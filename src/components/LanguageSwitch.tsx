@@ -10,34 +10,34 @@ const LanguageSwitch = () => {
   const { switchToEnglish, switchToFinnish, switchToJapanese } =
     React.useContext(IntlContext);
   return (
-    <div className="lang">
-      <div className="lang-container">
+    <div className="langs">
+      <div className="lang">
         <img
           src={enImg}
           role="link"
-          id="lang-button"
+          className="lang-button"
           onClick={switchToEnglish}
           title="Change site language to English."
           alt="Clickable British flag for changing the site language to English."
           tabIndex={0}
         />
       </div>
-      <div className="lang-container">
+      <div className="lang">
         <img
           src={fiImg}
           role="link"
-          id="lang-button"
+          className="lang-button"
           onClick={switchToFinnish}
           title="Change site language to Finnish."
           alt="Clickable Finnish flag for changing the site language to Finnish."
           tabIndex={0}
         />
       </div>
-      <div className="lang-container">
+      <div className="lang">
         <img
           src={jpImg}
           role="link"
-          id="lang-button"
+          className="lang-button"
           onClick={switchToJapanese}
           title="Change site language to Japanese."
           alt="Clickable Japanese flag for changing the site language to Japanese."

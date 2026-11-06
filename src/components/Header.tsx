@@ -11,7 +11,9 @@ const Header = () => (
           kytonie.me
         </Link>
       </div>
-      <LanguageSwitch />
+      <div className="langs-container">
+        <LanguageSwitch />
+      </div>
     </header>
   </div>
 );

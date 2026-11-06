@@ -1,20 +1,10 @@
-#lang-button {
-  margin: 0;
-  width: 2.6em;
+.langs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-#lang-button:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.lang-container {
-  display: inline;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.lang p {
+.langs p {
   display: none;
   margin: auto;
   font-weight: normal;
@@ -23,7 +13,30 @@
   text-align: center;
 }
 
+.lang-button {
+  margin: 0;
+  width: 2.6em;
+  display: block;
+}
+
+.lang-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .lang {
-  width: 40vw;
-  text-align: center;
+  display: inline-flex;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+@media screen and (max-width: 830px) {
+  .langs {
+    justify-content: center;
+  }
+
+  .lang {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }

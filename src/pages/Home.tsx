@@ -82,15 +82,16 @@ const Home = () => {
                   }}
                   style={{ position: "relative" }}
                 >
-                  <div style={{ display: "inline-flex", margin: "auto" }}>
+                  <span style={{ display: "inline-flex", margin: "auto" }}>
                     <ClipboardIcon
                       style={{ width: 16, height: 16, marginRight: 4 }}
+                      aria-label={"Copy to clipboard"}
                     />
                     <p
                       style={{
                         margin: "auto",
                         fontFamily: "sans-serif",
-                        fontSize: 14,
+                        fontSize: 12,
                       }}
                     >
                       <FormattedMessage
@@ -98,15 +99,15 @@ const Home = () => {
                         defaultMessage="Copy GPG-key"
                       />
                     </p>
-                  </div>
+                  </span>
                   {showCopyNotification && (
-                    <div className="copy-notification-popup">
+                    <span className="copy-notification-popup">
                       {"✔ "}️
                       <FormattedMessage
                         id="gpg.copied"
                         defaultMessage="Copied"
                       />
-                    </div>
+                    </span>
                   )}
                 </button>
               </div>

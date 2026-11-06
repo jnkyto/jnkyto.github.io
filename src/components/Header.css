@@ -9,15 +9,17 @@
 
 .header {
   margin: auto;
-  max-width: 80vw;
-  display: inline-table;
+  width: 100%;
+  max-width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
 }
 
 .go-home-container {
-  display: table-cell;
-  width: 40vw;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .go-home {
@@ -28,23 +30,29 @@
   font-weight: bold;
 }
 
+.langs-container {
+  display: flex;
+  align-items: center;
+  padding-top: 0.4em;
+}
+
 @media screen and (max-width: 830px) {
-  .header-container {
-    display: inline-flex;
-  }
-
   .header {
-    width: 100vw;
-  }
-
-  #go-home {
-    padding: 1vh;
-  }
-
-  .lang {
-    /* .lang IS DEFINED IN LanguageSwitch.css*/
-    display: table-row;
+    flex-direction: column;
+    max-width: 100%;
     width: 100%;
-    padding-right: 0;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .go-home-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .langs-container {
+    justify-content: center;
+    width: 100%;
+    padding-top: 0;
   }
 }
